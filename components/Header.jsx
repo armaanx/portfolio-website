@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 export default function Header() {
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto p-6 xl:items-center">
+    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto p-6 xl:items-center z-20 bg-[#121516]">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -15,10 +15,10 @@ export default function Header() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}>
         <div className="hidden md:inline-block flex flex-row items-center cursor-pointer">
+          <a className="mr-4">Home</a>
           <a className="mr-4">About</a>
           <a className="mr-4">Projects</a>
-          <a className="mr-4">Contact Me</a>
-          <a className="">Resume</a>
+          <a className="mr-4">Contact</a>
         </div>
         <div className="md:hidden">
           <h1>SideBar</h1>
