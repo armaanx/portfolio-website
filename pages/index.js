@@ -6,14 +6,12 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="h-screen bg-[#121516] text-white snap-y snap-mandatory overflow-scroll z-0">
+    <div className="snap-y h-screen snap-mandatory bg-[#121516] overflow-auto text-white">
       <Head>
         <title>{"Armaan's Portfolio"}</title>
       </Head>
-
       <Header />
-
-      <section id="main" className="snap-start">
+      <section id="main" className="snap-center">
         <Main />
       </section>
 
@@ -21,7 +19,7 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects" className="">
         <Projects />
       </section>
     </div>

@@ -1,13 +1,15 @@
+/* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 export default function Main() {
   return (
-    <>
+    <div className="h-screen flex items-center justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}>
-        <div className="p-10 flex flex-col gap-3 justify-center items-center  h-screen md:flex-row md:gap-1">
-          <div className="p-4 md:mr-2 ">
+        transition={{ duration: 1.5 }}
+        className="flex flex-col items-center justify-center  ">
+        <div className="p-10 pb-6 pt-0 flex flex-col  justify-center items-center md:flex-row md:gap-1">
+          <div className="mb-10 ">
             <h1 className="text-xl mb-3 font-semibold text-[#f8f8f9]">
               Hi, my name is
             </h1>
@@ -21,7 +23,7 @@ export default function Main() {
               {"I'm a Software Engineer and a Full Stack Web Developer."}
             </h1>
           </div>
-          <div className="m-3">
+          <div className="md:ml-3">
             <img
               src="/me.png"
               className="border-[6px] border-[#000000] rounded-full h-36 w-36 object-cover lg:h-44 lg:w-44"
@@ -29,7 +31,12 @@ export default function Main() {
             />
           </div>
         </div>
+        <div className="w-fit md:place-self-start md:pl-10 text-md md:text-lg xl:text-xl ">
+          <h1 className="border-[3px] p-2 rounded-xl hover:border-black hover:text-black">
+            Resume
+          </h1>
+        </div>
       </motion.div>
-    </>
+    </div>
   );
 }
