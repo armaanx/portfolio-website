@@ -35,7 +35,9 @@ export default function About() {
             <div className="flex flex-row justify-start items-center flex-wrap text-md lg:text-xl">
               {skills.map((s, i) => {
                 return (
-                  <span key={i} className="p-2 m-1 rounded-lg border-[1px]">
+                  <span
+                    key={i}
+                    className="p-2 m-1 rounded-lg border-[2px] hover:text-[#4d61af] hover:border-[#4d61af]">
                     {s}
                   </span>
                 );

@@ -10,20 +10,23 @@ export default function SideMenu({ isShow, handleSideMenu }) {
         initial={{ x: 500 }}
         animate={{ x: 0 }}
         transition={{ type: "tween", ease: "anticipate" }}
-        className="h-full w-[69%] fixed right-0 bg-[#121516] flex flex-col items-center justify-center text-lg font-semibold">
+        className="h-full w-[69%] fixed right-0 bg-[#121516] flex flex-col items-center justify-center text-lg font-semibold [&>*:hover]:text-[#b73a4d]">
         <span className="absolute top-0 right-0 m-10 p-3 text-4xl">
-          <AiOutlineClose className="cursor-pointer" onClick={handleSideMenu} />
+          <AiOutlineClose
+            className="cursor-pointer text-[#4d61af]"
+            onClick={handleSideMenu}
+          />
         </span>
-        <a className="p-4" href="#main" onClick={handleSideMenu}>
+        <a className="p-6" href="#main" onClick={handleSideMenu}>
           Home
         </a>
-        <a className="p-4" href="#about" onClick={handleSideMenu}>
+        <a className="p-6" href="#about" onClick={handleSideMenu}>
           About
         </a>
-        <a className="p-4" href="#projects" onClick={handleSideMenu}>
+        <a className="p-6" href="#projects" onClick={handleSideMenu}>
           Projects
         </a>
-        <a className="p-4" href="" onClick={handleSideMenu}>
+        <a className="p-6" onClick={handleSideMenu}>
           Contact
         </a>
       </motion.div>
