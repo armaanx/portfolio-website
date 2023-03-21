@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { AiOutlineClose } from "react-icons/ai";
 export default function SideMenu({ isShow, handleSideMenu }) {
   if (!isShow) {
     return null;
@@ -8,11 +9,11 @@ export default function SideMenu({ isShow, handleSideMenu }) {
       <motion.div
         initial={{ x: 500 }}
         animate={{ x: 0 }}
-        transition={{ duration: 0.2 }}
-        className="h-full w-[69%] fixed right-0 bg-[#121516] p-6 flex flex-col items-center justify-center ">
-        <h1 className="p-4" onClick={handleSideMenu}>
-          X
-        </h1>
+        transition={{ type: "tween", ease: "anticipate" }}
+        className="h-full w-[69%] fixed right-0 bg-[#121516] flex flex-col items-center justify-center text-lg font-semibold">
+        <span className="absolute top-0 right-0 m-10 p-3 text-4xl">
+          <AiOutlineClose className="cursor-pointer" onClick={handleSideMenu} />
+        </span>
         <a className="p-4" href="#main" onClick={handleSideMenu}>
           Home
         </a>
@@ -21,6 +22,9 @@ export default function SideMenu({ isShow, handleSideMenu }) {
         </a>
         <a className="p-4" href="#projects" onClick={handleSideMenu}>
           Projects
+        </a>
+        <a className="p-4" href="" onClick={handleSideMenu}>
+          Contact
         </a>
       </motion.div>
     </div>
