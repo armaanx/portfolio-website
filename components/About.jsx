@@ -17,8 +17,8 @@ export default function About() {
   return (
     <div className="h-screen flex items-center justify-center">
       <div className="flex flex-col items-center justify-center overflow-hidden bg-[#121516]">
-        <div className="  p-4 pt-14 md:p-32 lg:w-[1000px] flex flex-col justify-center items-baseline">
-          <div className="p-4">
+        <div className="pl-3 pr-3 md:p-32 lg:w-[1000px] flex flex-col justify-center items-baseline">
+          <div className="p-4 pt-2">
             <h1 className="text-3xl mb-4 font-bold text-[#b73a4d] lg:text-5xl">
               About Me
             </h1>
@@ -28,11 +28,11 @@ export default function About() {
               }
             </h1>
           </div>
-          <div className="p-4">
+          <div className="p-4 pb-2">
             <h1 className="text-3xl mb-4 font-bold text-[#b73a4d] lg:text-5xl">
               Skills
             </h1>
-            <div className="flex flex-row justify-start items-center flex-wrap text-md lg:text-xl pb-12">
+            <div className="flex flex-row justify-start items-center flex-wrap text-md lg:text-xl">
               {skills.map((s, i) => {
                 return (
                   <span key={i} className="p-2 m-1 rounded-lg border-[1px]">
