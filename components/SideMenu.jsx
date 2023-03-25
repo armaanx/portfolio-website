@@ -5,7 +5,10 @@ export default function SideMenu({ isShow, handleSideMenu }) {
     return null;
   }
   return (
-    <div className="md:hidden h-screen w-screen fixed bg-black bg-opacity-20 backdrop-blur-sm z-999">
+    <div className="md:hidden h-screen w-screen fixed bg-black bg-opacity-20 backdrop-blur-sm z-50">
+      <div
+        className="h-full w-[31%] fixed left-0"
+        onClick={handleSideMenu}></div>
       <motion.div
         initial={{ x: 500 }}
         animate={{ x: 0 }}

@@ -1,13 +1,7 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import SideMenu from "./SideMenu";
 export default function Header({ isShow, handleSideMenu }) {
-  // if (typeof window !== "undefined") {
-  //   let devWidth = window.innerWidth;
-  //   console.log(devWidth);
-  // }
-
   if (isShow) {
     return <SideMenu isShow={isShow} handleSideMenu={handleSideMenu} />;
   }

@@ -18,26 +18,25 @@ export default function Home() {
   function handleScreenSizeChange() {
     setShow(false);
   }
-  console.log(windowSize.width);
   const [show, setShow] = useState(false);
   function handleSideMenu() {
     setShow(!show);
   }
   return (
-    <div className="snap-y h-screen snap-mandatory bg-[#121516] overflow-auto text-white z-1 scroll-smooth">
+    <div className="snap-y h-screen snap-mandatory bg-[#121516] overflow-auto text-white z-1 scroll-smooth scrollbar-hide">
       <Head>
         <title>{"Armaan's Portfolio"}</title>
       </Head>
       <Header isShow={show} handleSideMenu={handleSideMenu} />
-      <section id="main" className="snap-center">
+      <section id="main" className="snap-center snap-always">
         <Main />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about" className="snap-center snap-always">
         <About />
       </section>
 
-      <section id="projects" className="snap-center">
+      <section id="projects" className="snap-center snap-always">
         <Projects />
       </section>
     </div>
