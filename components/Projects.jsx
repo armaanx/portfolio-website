@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
     <>
-      <div className="h-screen flex flex-nowrap  justify-start items-center md:justify-center snap-x snap-mandatory  gap-5  p-3 overflow-x-scroll overflow-y-hidden">
+      <div className="h-screen flex flex-nowrap  justify-start items-center md:justify-center snap-x snap-mandatory  gap-5  p-3 overflow-x-scroll overflow-y-hidden md:scrollbar-hide">
         <div className="bg-[rgb(16,19,20)] text-left drop-shadow-md w-[330px] p-6 flex-none snap-center snap-always h-[500px] flex flex-col items-start justify-evenly">
           <h1 className="text-2xl md:text-3xl mb-4 font-bold text-[#b73a4d]">
             PassProtect
