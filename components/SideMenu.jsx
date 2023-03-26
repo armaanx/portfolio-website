@@ -29,7 +29,7 @@ export default function SideMenu({ isShow, handleSideMenu }) {
         <a className="p-6" href="#projects" onClick={handleSideMenu}>
           Projects
         </a>
-        <a className="p-6" onClick={handleSideMenu}>
+        <a className="p-6" href="#contact" onClick={handleSideMenu}>
           Contact
         </a>
       </motion.div>

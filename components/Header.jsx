@@ -7,7 +7,7 @@ export default function Header({ isShow, handleSideMenu }) {
   }
   return (
     <>
-      <header className="fixed top-0  w-screen  p-6 xl:items-center bg-[#121516] shadow-sm text-lg 2xl:text-[20px]">
+      <header className="fixed top-0  w-screen  p-6 xl:items-center bg-[#121516] shadow-sm text-lg 2xl:text-[20px] z-50">
         <div className="flex items-center justify-between w-[95%] md:w-[90%] xl:w-[60%] mx-auto align-baseline ">
           <motion.div
             initial={{ opacity: 0 }}
@@ -31,7 +31,9 @@ export default function Header({ isShow, handleSideMenu }) {
               <a className="mr-4" href="#projects">
                 Projects
               </a>
-              <a className="mr-4">Contact</a>
+              <a className="mr-4" href="#contact">
+                Contact
+              </a>
             </div>
             <div className="md:hidden">
               <GiHamburgerMenu
