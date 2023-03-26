@@ -24,7 +24,7 @@ export default function Home() {
     setShow(!show);
   }
   return (
-    <div className="snap-y h-screen snap-mandatory bg-[#121516] overflow-auto text-white z-1 scroll-smooth scrollbar-hide">
+    <div className="font-[Montserrat] snap-y h-screen snap-mandatory bg-[#121516] overflow-auto text-white z-1 scroll-smooth scrollbar-hide">
       <Head>
         <title>{"Armaan's Portfolio"}</title>
       </Head>
