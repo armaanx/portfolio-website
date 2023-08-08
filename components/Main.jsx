@@ -1,6 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 export default function Main() {
+  const openResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1phPmdUCoHNOgIV2Y1w2lqERJDLQmSqCG/view?usp=sharing",
+      "_blank"
+    );
+  };
   return (
     <div className="h-screen flex items-center justify-center">
       <motion.div
@@ -31,7 +37,9 @@ export default function Main() {
             />
           </div>
         </div>
-        <div className="w-fit md:place-self-start md:pl-10 text-md md:text-lg xl:text-xl ">
+        <div
+          onClick={openResume}
+          className="w-fit md:place-self-start md:pl-10 text-md md:text-lg xl:text-xl cursor-pointer ">
           <h1 className="border-[3px] p-2 rounded-xl hover:border-black hover:text-black">
             Resume
           </h1>
