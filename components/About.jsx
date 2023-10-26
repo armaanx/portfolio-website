@@ -12,10 +12,11 @@ const skills = [
   "Java",
   "Firebase",
   "Data Structures & Algorithms",
+  "TypeScript"
 ];
 export default function About() {
   return (
-    <div className="h-screen flex items-center justify-center">
+    <div className="h-screen flex items-center justify-center ">
       <div className="flex flex-col items-center justify-center overflow-hidden bg-[#121516]">
         <div className="pl-3 pr-3 md:p-32 lg:w-[1000px] flex flex-col justify-center items-baseline">
           <div className="p-4 pt-2">

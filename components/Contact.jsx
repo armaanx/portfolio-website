@@ -7,7 +7,7 @@ export default function Contact() {
         <h1 className="font-bold text-3xl">Contact Me</h1>
         <div className="flex flex-row items-center justify-center">
           <a
-            href="mailto:armaanmishra48@protonmail.com"
+            href="mailto:armaanmishra48@gmail.com"
             className="p-4 cursor-pointer hover:text-red-500">
             <HiOutlineMail />
           </a>
