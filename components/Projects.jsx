@@ -100,6 +100,36 @@ export default function Projects() {
             </a>
           </div>
         </div>
+        <div className="bg-[rgb(16,19,20)] text-left shadow-md w-[330px] p-6 flex-none snap-center snap-always h-[500px] flex flex-col items-start justify-evenly z-10">
+          <h1 className="text-2xl md:text-3xl mb-4 font-bold text-[#b73a4d]">
+            Cat Albums
+          </h1>
+          <p className="text-lg mb-2 font-semibold">
+            A web app which uses the LastFM API to search for music albums and display it in a cool way.
+          </p>
+          <p className="text-[17px] mb-2 font-semibold text-stone-200">
+           Users can search for albums, switch between different cats and downlaod the final image. It uses HTML Canvas to render the images. 
+          </p>
+          <p className="text-lg font-semibold mb-4 text-[#4d61af]">
+            Technologies used- Next.Js, Tailwind CSS, Typescript, Shad-Cn UI
+          </p>
+          <div className="flex flex-row items-center justify-start gap-4">
+            <a
+              href="https://github.com/armaanx/cat-albums-v2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[2px] border-white p-2 rounded-lg cursor-pointer hover:text-[#6caf4d] hover:border-[#6caf4d]">
+              Source Code
+            </a>
+            <a
+              href="https://cat-albums.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[2px] border-white p-2 rounded-lg cursor-pointer hover:text-[#6caf4d] hover:border-[#6caf4d]">
+              Live Demo
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );

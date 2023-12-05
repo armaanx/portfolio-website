@@ -1,5 +1,5 @@
 import { HiOutlineMail } from "react-icons/hi";
-import { BsGithub, BsInstagram, BsSpotify } from "react-icons/bs";
+import { BsGithub, BsInstagram, BsSpotify, BsTwitter, BsX } from "react-icons/bs";
 export default function Contact() {
   return (
     <div className="h-screen flex items-center justify-center flex-row text-4xl text-center">
@@ -24,6 +24,13 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="p-4 cursor-pointer hover:text-red-500">
             <BsInstagram />
+          </a>
+          <a
+            href="https://twitter.com/armaanmishra131"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 cursor-pointer hover:text-red-500">
+            <BsTwitter />
           </a>
         </div>
       </div>
