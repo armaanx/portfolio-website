@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Main() {
   const openResume = () => {
     window.open(
-      "https://resume.io/r/3JWCHNzm5",
+      "https://drive.google.com/file/d/1phPmdUCoHNOgIV2Y1w2lqERJDLQmSqCG/view?usp=sharing",
       "_blank"
     );
   };
